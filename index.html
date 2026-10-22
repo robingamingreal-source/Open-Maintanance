@@ -17,7 +17,11 @@
         <hr>
         <h2>We apologize for the inconvenience. Our server is currently undergoing maintenance to improve our services and fix any issues or vulnerabilities. Please check back later.</h2>
     </div>
-    
     <script src="background.js"></script>
+    <script>
+        if (window.location.pathname.includes('/s/')) {
+         window.location.replace('/');
+        }
+    </script>
 </body>
 </html>
